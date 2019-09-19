@@ -1,0 +1,23 @@
+body{ 
+@include light();
+color: $text-color;
+}
+button:active,button:focus,button{
+    outline:none;
+}
+.button-o{
+    border: 2px solid $primary;
+    padding:17px 22px;
+    font-size:12px;
+    text-transform:uppercase;
+    @include bold();
+    color:$primary;
+}
+.button{
+    padding: 25px 45px;
+    background-color: $primary;
+    border:none;
+    text-transform:uppercase;
+    color:#fff;
+    @include bold;
+}

@@ -1,0 +1,6 @@
+.hero {
+  background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
+  background-size: contain;
+  padding-top: 120px;
+  padding-bottom: 270px;
+}

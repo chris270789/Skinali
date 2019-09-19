@@ -1,0 +1,21 @@
+.hero{
+  min-height:70vh;
+    background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
+    background-size:contain;
+    padding-top:120px;
+    padding-bottom:270px;
+    &__title{
+		font-size:30px;
+		width:270px;
+		margin-bottom: 40px;
+		display: block;
+    	}
+    &__subtitle{
+    	display: block;
+		font-size:30px;
+		@include bold;
+		margin-bottom: 67px;
+	}
+	
+
+}
