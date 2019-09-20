@@ -42,6 +42,23 @@ button:active, button:focus, button {
   color: #507fe1;
 }
 
+.button {
+  padding: 25px 45px;
+  background-color: #507fe1;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +90,47 @@ button:active, button:focus, button {
   color: #7b7b79;
   display: block;
   text-decoration: none;
+}
+
+.menu {
+  z-index: 0;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  padding: 16px 0;
+  width: 100%;
+  color: #fff;
+  background-color: #507fe1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.menu-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #fff;
+}
+
+.menu__nav {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menu-button {
@@ -121,15 +179,22 @@ button:active, button:focus, button {
 }
 
 .hero {
+  min-height: 70vh;
   background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
   background-size: contain;
-  padding-top: 120px;
+  padding-top: 50px;
   padding-bottom: 270px;
+}
+
+.hero__square {
+  background-color: #fff;
+  width: 15%;
+  height: 200px;
 }
 
 .hero__title {
   font-size: 30px;
-  width: 200px;
+  width: 270px;
   margin-bottom: 40px;
   display: block;
 }
