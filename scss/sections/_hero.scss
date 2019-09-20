@@ -6,20 +6,20 @@
     padding-bottom:270px;
 	&__square{
 		background-color:#fff;
-		width:15%;
-		height:200px;
+		width:40%;
+		padding: 20px;
+		margin-bottom: 25px;
 	}
     &__title{
 		font-size:30px;
-		width:270px;
 		margin-bottom: 40px;
+		margin-top:0;
 		display: block;
     	}
     &__subtitle{
     	display: block;
 		font-size:30px;
 		@include bold;
-		margin-bottom: 67px;
 	}
 	
 

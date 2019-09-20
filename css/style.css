@@ -43,7 +43,8 @@ button:active, button:focus, button {
 }
 
 .button {
-  padding: 25px 45px;
+  dipslay: block;
+  padding: 15px 15px;
   background-color: #507fe1;
   border: none;
   text-transform: uppercase;
@@ -188,14 +189,15 @@ button:active, button:focus, button {
 
 .hero__square {
   background-color: #fff;
-  width: 15%;
-  height: 200px;
+  width: 40%;
+  padding: 20px;
+  margin-bottom: 25px;
 }
 
 .hero__title {
   font-size: 30px;
-  width: 270px;
   margin-bottom: 40px;
+  margin-top: 0;
   display: block;
 }
 
@@ -203,6 +205,5 @@ button:active, button:focus, button {
   display: block;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold',sans-serif;
-  margin-bottom: 67px;
 }
 /*# sourceMappingURL=style.css.map */

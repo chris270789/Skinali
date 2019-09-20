@@ -14,7 +14,8 @@ button:active,button:focus,button{
     color:$primary;
 }
 .button{
-    padding: 25px 45px;
+    dipslay:block;
+    padding: 15px 15px;
     background-color: $primary;
     border:none;
     text-transform:uppercase;
