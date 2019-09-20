@@ -42,14 +42,6 @@ button:active, button:focus, button {
   color: #507fe1;
 }
 
-.button {
-  padding: 25px 45px;
-  background-color: #507fe1;
-  border: none;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,7 +121,6 @@ button:active, button:focus, button {
 }
 
 .hero {
-  min-height: 70vh;
   background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
   background-size: contain;
   padding-top: 120px;
@@ -138,7 +129,7 @@ button:active, button:focus, button {
 
 .hero__title {
   font-size: 30px;
-  width: 270px;
+  width: 200px;
   margin-bottom: 40px;
   display: block;
 }

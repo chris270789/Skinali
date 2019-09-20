@@ -2,8 +2,13 @@
   min-height:70vh;
     background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
     background-size:contain;
-    padding-top:120px;
+    padding-top:50px;
     padding-bottom:270px;
+	&__square{
+		background-color:#fff;
+		width:15%;
+		height:200px;
+	}
     &__title{
 		font-size:30px;
 		width:270px;
