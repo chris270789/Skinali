@@ -12,6 +12,7 @@ button:active,button:focus,button{
     text-transform:uppercase;
     @include bold();
     color:$primary;
+    background-color:transparent;
 }
 .button{
     dipslay:block;

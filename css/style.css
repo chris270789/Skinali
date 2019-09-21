@@ -8,12 +8,6 @@
   margin: auto;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 90%;
-  }
-}
-
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
@@ -46,6 +40,7 @@ button:active, button:focus, button {
   text-transform: uppercase;
   font-family: 'Proxima Nova Semibold',sans-serif;
   color: #507fe1;
+  background-color: transparent;
 }
 
 .button {
@@ -211,5 +206,30 @@ button:active, button:focus, button {
   display: block;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .hero__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .logo {
+    display: none;
+  }
+  .button-o {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

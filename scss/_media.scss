@@ -1,0 +1,25 @@
+@media screen and (max-width:1200px){
+.container {
+    max-width: 95%;
+  }
+}
+@media screen and (max-width:920px){
+.hero__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.navbar{
+    &__mobile, &__landline{
+        display:none;
+    }
+}
+}
+@media screen and (max-width:560px){
+    .logo{
+        display:none;
+    }
+    .button-o{
+        font-size:12px;
+    }
+}
