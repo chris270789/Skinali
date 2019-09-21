@@ -8,6 +8,12 @@
   margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
@@ -183,7 +189,7 @@ button:active, button:focus, button {
   min-height: 70vh;
   background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
   background-size: contain;
-  padding-top: 50px;
+  padding-top: 145px;
   padding-bottom: 270px;
 }
 
