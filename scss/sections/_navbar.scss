@@ -30,8 +30,9 @@
     }
     
 }
-.menu{  z-index: 0;
-        position: fixed;
+.menu{ 
+        position: fixed;'
+         z-index: 0;
         top:80px;
         left: 0;
         padding: 16px 0;
@@ -40,9 +41,10 @@
         background-color: $primary;
         transition: 0.5s;
         transform: translateY(-100%);
+        opacity:0;
         &-active{
         transform: translateY(0);
-
+        opacity:1;
         }
         &__link{
         text-decoration: none;

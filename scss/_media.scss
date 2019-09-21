@@ -15,11 +15,43 @@
     }
 }
 }
-@media screen and (max-width:560px){
-    .logo{
+@media screen and (max-width:700px){
+   
+.hero{
+    padding-top: 80px;
+    padding-bottom: 122px;
+    &__square {
+        width: 100%;
+}
+}
+}
+@media screen and (max-width:576px){
+.logo{
         display:none;
     }
-    .button-o{
+.button-o{
         font-size:12px;
+        margin: auto;
+        padding: 13px 6px;
+    }
+    
+.hero{
+    
+    padding-top: 43vh;
+     background-size: cover;
+     &__title {
+        font-size: 16px;}
+     &__subtitle {
+            font-size: 18px;}
+}
+
+.menu{
+    height:50%;     
+    &__nav{
+        flex-direction: column; 
     }
 }
+.conteiner{
+    height:100%;
+}
+} 
