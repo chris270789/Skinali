@@ -1,6 +1,10 @@
-.button:hover,.button-o:hover{
-    background-color: lighten($primary,70%);
+
+.button:active,.button-o:active,.button:hover,.button-o:hover{
+    background-color: darken($primary,20%);
 }
-.button:active,.button-o:active{
-    background-color: darken($primary,70%);
+.button-o:hover,.button-o:active{
+color: #fff;
+}
+.menu-button:hover{
+box-shadow:0 0 3px rgba(0,0,0,0.5);
 }

@@ -111,6 +111,7 @@ button:active, button:focus, button {
 }
 
 .menu-active {
+  z-index: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -135,6 +136,7 @@ button:active, button:focus, button {
 }
 
 .menu-button {
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -163,28 +165,34 @@ button:active, button:focus, button {
 }
 
 .menu-button__line:after {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .menu-button__line:before {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .menu-button__line, .menu-button__line:after, .menu-button__line:before {
   font-style: 18px;
+  position: absolute;
   display: block;
   width: 20px;
   height: 3px;
   background-color: #89a9eb;
-  margin: 2px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 50%;
+  margin-top: -1.5px;
+  left: 50%;
+  margin-left: -10px;
 }
 
 .menu-button__active .menu-button__line:before {
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
-  width: 10px;
+  width: 13px;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
 }
@@ -192,7 +200,7 @@ button:active, button:focus, button {
 .menu-button__active .menu-button__line:after {
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
-  width: 10px;
+  width: 13px;
   -webkit-transform-origin: left top;
           transform-origin: left top;
 }
@@ -217,7 +225,6 @@ button:active, button:focus, button {
   background-size: contain;
   padding-top: 145px;
   padding-bottom: 270px;
-  margin-top: 60px;
 }
 
 .hero__square {
@@ -240,12 +247,17 @@ button:active, button:focus, button {
   font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
-.button:hover, .button-o:hover {
-  background-color: white;
+.button:active, .button-o:active, .button:hover, .button-o:hover {
+  background-color: #1e4cad;
 }
 
-.button:active, .button-o:active {
-  background-color: black;
+.button-o:hover, .button-o:active {
+  color: #fff;
+}
+
+.menu-button:hover {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1200px) {
@@ -302,7 +314,7 @@ button:active, button:focus, button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .conteiner {
+  .container {
     height: 100%;
   }
 }
