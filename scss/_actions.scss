@@ -1,10 +1,11 @@
 
-.button:active,.button-o:active,.button:hover,.button-o:hover{
+.button:active,.button:hover{
     background-color: darken($primary,20%);
 }
 .button-o:hover,.button-o:active{
 color: #fff;
+background-color: darken($primary,20%);
 }
-.menu-button:hover{
+.navbar__menu-button:hover{
 box-shadow:0 0 3px rgba(0,0,0,0.5);
 }

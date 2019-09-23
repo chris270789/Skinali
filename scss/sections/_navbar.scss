@@ -3,8 +3,7 @@
     top:0;
     width:100%;
     background-color:#fff;
-     position:fixed;
-
+z-index:3;
     &-wrap{
     	 z-index:3;
     	background-color:#fff;
@@ -33,9 +32,9 @@
     }
     
 }
-.menu{
-        position: fixed;
-        z-index: 0;
+.menu{  
+        position:fixed;
+        z-index: -1;
         top:80px;
         left: 0;
         padding: 16px 0;
@@ -45,11 +44,19 @@
         transition: 0.5s;
         transform: translateY(-100%);
         opacity:0;
-        &-active{
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        -webkit-transform: translateY(-0%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
         -webkit-transform: translateY(-100%);
         -moz-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
         -o-transform: translateY(-100%);
+         &-active{
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;
@@ -57,7 +64,7 @@
         z-index: 1;
         transform: translateY(0);
         opacity:1;
-         }
+        }
         &__link{
         text-decoration: none;
         text-transform: uppercase;
@@ -84,18 +91,17 @@
             flex-direction: column;
             justify-content: center;
             transition: all 0.5s;
-            
              &__line:after,&__line:before{
                  content:'';
              }
              &__line:after{
                  transform:translateY(10px);
                
-}
+            }
               &__line:before{
                  transform:translateY(-10px);
                  
-}
+            }
             &__line, &__line:after,&__line:before{
                 font-style: 18px; 
                 position:absolute;
@@ -121,7 +127,7 @@
             //     height:0;
             //         }
         }
-    }
+}
 .logo{
     &__text{
         font-style: 18px;

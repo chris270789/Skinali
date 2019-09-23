@@ -47,7 +47,7 @@ button:active, button:focus, button {
   top: 0;
   width: 100%;
   background-color: #fff;
-  position: fixed; }
+  z-index: 3; }
   .navbar-wrap {
     z-index: 3;
     background-color: #fff;
@@ -72,7 +72,7 @@ button:active, button:focus, button {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: -1;
   top: 80px;
   left: 0;
   padding: 16px 0;
@@ -81,12 +81,20 @@ button:active, button:focus, button {
   background-color: #507fe1;
   transition: 0.5s;
   transform: translateY(-100%);
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%); }
   .menu-active {
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
@@ -175,13 +183,14 @@ button:active, button:focus, button {
     font-size: 30px;
     font-family: 'Proxima Nova Semibold',sans-serif; }
 
-.button:active, .button-o:active, .button:hover, .button-o:hover {
+.button:active, .button:hover {
   background-color: #1e4cad; }
 
 .button-o:hover, .button-o:active {
-  color: #fff; }
+  color: #fff;
+  background-color: #1e4cad; }
 
-.menu-button:hover {
+.navbar__menu-button:hover {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
 
 @media screen and (max-width: 1200px) {
