@@ -64,7 +64,11 @@ z-index:3;
         z-index: 1;
         transform: translateY(0);
         opacity:1;
-        }
+        -webkit-transform:;
+        -moz-transform:;
+        -ms-transform:;
+        -o-transform:;
+}
         &__link{
         text-decoration: none;
         text-transform: uppercase;

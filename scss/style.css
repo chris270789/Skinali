@@ -1,237 +1,83 @@
-* {
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "...bkit-transform:": expected expression (e.g. 1px, bold), was ";"
+        on line 67 of F:/WEB/Skinali/scss/sections/_navbar.scss
+        from line 5 of F:\WEB\Skinali\scss\style.scss
 
-.container {
-  max-width: 1170px;
-  margin: auto; }
+62:         -ms-transition: 0.5s;
+63:         -o-transition: 0.5s;
+64:         z-index: 1;
+65:         transform: translateY(0);
+66:         opacity:1;
+67:         -webkit-transform:;
+68:         -moz-transform:;
+69:         -ms-transform:;
+70:         -o-transform:;
+71: }
+72:         &__link{
 
-@font-face {
-  font-family: 'Proxima Nova Light';
-  src: url("../fonts/ProximaNova-Light.eot");
-  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Proxima Nova Semibold';
-  src: url("../fonts/ProximaNova-Semibold.eot");
-  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-body {
-  font-family: 'Proxima Nova Light', sans-serif;
-  color: #262626; }
-
-button:active, button:focus, button {
-  outline: none; }
-
-.button-o {
-  border: 2px solid #507fe1;
-  padding: 17px 22px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-family: 'Proxima Nova Semibold',sans-serif;
-  color: #507fe1;
-  background-color: transparent; }
-
-.button {
-  display: block;
-  padding: 15px 15px;
-  background-color: #507fe1;
-  border: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: 'Proxima Nova Semibold',sans-serif; }
-
-.navbar {
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 3; }
-  .navbar-wrap {
-    z-index: 3;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-    justify-content: space-between; }
-  .navbar__mobile, .navbar__landline {
-    text-align: right; }
-  .navbar__phone {
-    display: block;
-    font-size: 19px;
-    font-family: 'Proxima Nova Semibold',sans-serif;
-    text-decoration: none;
-    color: #262626;
-    margin-bottom: 5px; }
-  .navbar__small-text {
-    font-size: 14px;
-    color: #7b7b79;
-    display: block;
-    text-decoration: none; }
-
-.menu {
-  position: fixed;
-  z-index: -1;
-  top: 80px;
-  left: 0;
-  padding: 16px 0;
-  width: 100%;
-  color: #fff;
-  background-color: #507fe1;
-  transition: 0.5s;
-  transform: translateY(-100%);
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%); }
-  .menu-active {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    z-index: 1;
-    transform: translateY(0);
-    opacity: 1; }
-  .menu__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
-    color: #fff; }
-  .menu__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
-  .menu-button {
-    position: relative;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    border-right: 1px solid rgba(81, 11, 186, 0.1);
-    border-left: 1px solid rgba(81, 11, 186, 0.1);
-    height: 80px;
-    width: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 0.5s; }
-    .menu-button__line:after, .menu-button__line:before {
-      content: ''; }
-    .menu-button__line:after {
-      transform: translateY(10px); }
-    .menu-button__line:before {
-      transform: translateY(-10px); }
-    .menu-button__line, .menu-button__line:after, .menu-button__line:before {
-      font-style: 18px;
-      position: absolute;
-      display: block;
-      width: 20px;
-      height: 3px;
-      background-color: #89a9eb;
-      transition: 0.5s;
-      top: 50%;
-      margin-top: -1.5px;
-      left: 50%;
-      margin-left: -10px; }
-    .menu-button__active .menu-button__line:before {
-      transform: rotate(35deg);
-      width: 13px;
-      transform-origin: left bottom; }
-    .menu-button__active .menu-button__line:after {
-      transform: rotate(-35deg);
-      width: 13px;
-      transform-origin: left top; }
-
-.logo__text {
-  font-style: 18px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 5px;
-  font-family: 'Proxima Nova Semibold',sans-serif; }
-.logo__description {
-  display: block;
-  font-size: 14px;
-  color: #7b7b79; }
-
-.hero {
-  min-height: 70vh;
-  background: #f1f1f1 url(../img/4.jpg) no-repeat center right;
-  background-size: contain;
-  padding-top: 145px;
-  padding-bottom: 270px; }
-  .hero__square {
-    background-color: #fff;
-    width: 40%;
-    padding: 20px;
-    margin-bottom: 25px; }
-  .hero__title {
-    font-size: 30px;
-    margin-bottom: 40px;
-    margin-top: 0;
-    display: block; }
-  .hero__subtitle {
-    display: block;
-    font-size: 30px;
-    font-family: 'Proxima Nova Semibold',sans-serif; }
-
-.button:active, .button:hover {
-  background-color: #1e4cad; }
-
-.button-o:hover, .button-o:active {
-  color: #fff;
-  background-color: #1e4cad; }
-
-.navbar__menu-button:hover {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
-
-@media screen and (max-width: 1200px) {
-  .container {
-    max-width: 95%; } }
-@media screen and (max-width: 920px) {
-  .hero__title {
-    font-size: 20px;
-    margin-bottom: 10px; }
-
-  .navbar__mobile, .navbar__landline {
-    display: none; } }
-@media screen and (max-width: 700px) {
-  .hero {
-    padding-top: 80px;
-    padding-bottom: 122px; }
-    .hero__square {
-      width: 100%; } }
-@media screen and (max-width: 576px) {
-  .logo {
-    display: none; }
-
-  .button-o {
-    font-size: 12px;
-    margin: auto;
-    padding: 13px 6px; }
-
-  .hero {
-    padding-top: 43vh;
-    background-size: cover; }
-    .hero__title {
-      font-size: 16px; }
-    .hero__subtitle {
-      font-size: 18px; }
-
-  .menu {
-    height: 50%; }
-    .menu__nav {
-      flex-direction: column; }
-
-  .container {
-    height: 100%; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+F:/WEB/Skinali/scss/sections/_navbar.scss:67
+F:\WEB\Skinali\scss\style.scss:5
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...bkit-transform:\": expected expression (e.g. 1px, bold), was \";\"\A         on line 67 of F:/WEB/Skinali/scss/sections/_navbar.scss\A         from line 5 of F:\WEB\Skinali\scss\style.scss\A \A 62:         -ms-transition: 0.5s;\A 63:         -o-transition: 0.5s;\A 64:         z-index: 1;\A 65:         transform: translateY(0);\A 66:         opacity:1;\A 67:         -webkit-transform:;\A 68:         -moz-transform:;\A 69:         -ms-transform:;\A 70:         -o-transform:;\A 71: }\A 72:         &__link{"; }
