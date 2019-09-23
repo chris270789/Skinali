@@ -1,0 +1,6 @@
+.button:hover,.button-o:hover{
+    background-color: lighten($primary,70%);
+}
+.button:active,.button-o:active{
+    background-color: darken($primary,70%);
+}
