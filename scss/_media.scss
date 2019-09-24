@@ -14,16 +14,37 @@
         display:none;
     }
 }
+.menu__link{
+    font-size:14px;
+}
+}
+@media screen and (max-width:820px){
+    .container {
+    
+        height: 100%;
+      }
+      .menu{
+        height:40%;     
+        &__nav{
+            height:100%;
+            flex-direction: column; 
+        }
+    }
+    .hero{
+        background-size: 154%;
+        padding-bottom:30px;
+       padding-top: 43vh;
+    }
 }
 @media screen and (max-width:700px){
    
 .hero{
-    padding-top: 80px;
-    padding-bottom: 122px;
+    // padding-top: 80px;
     &__square {
         width: 100%;
 }
 }
+
 }
 @media screen and (max-width:576px){
 .logo{
@@ -37,7 +58,7 @@
     
 .hero{
     
-    padding-top: 43vh;
+    
      background-size: cover;
      &__title {
         font-size: 16px;}
@@ -45,12 +66,7 @@
             font-size: 18px;}
 }
 
-.menu{
-    height:50%;     
-    &__nav{
-        flex-direction: column; 
-    }
-}
+
 .container{
     height:100%;
 }
